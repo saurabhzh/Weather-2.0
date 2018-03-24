@@ -1,3 +1,13 @@
-agm-map {
-  height: 300px;
+.search-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.search-full-width {
+  width: 95%;
+  margin-left: 2.5%;
+}
+#map {
+  height: 380px;
 }

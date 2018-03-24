@@ -10,7 +10,8 @@ import { SerachMapComponent } from './serach-map/serach-map.component';
 import { SavedPlacesComponent } from './saved-places/saved-places.component';
 
 import { LocationService } from './location.service';
-import { AgmCoreModule } from '@agm/core';
+
+import { HttpModule } from '@angular/http';
 
 
 @NgModule({
@@ -24,9 +25,7 @@ import { AgmCoreModule } from '@agm/core';
     AppRoutingModule,
     AppMaterialModule,
     BrowserModule,
-    AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyCZ56cysrOWbNEWTBJP4a4FBkg5E9SW0cQ'
-    })
+    HttpModule
   ],
   providers: [LocationService],
   bootstrap: [AppComponent]

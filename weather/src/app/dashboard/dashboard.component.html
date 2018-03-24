@@ -1,3 +1,11 @@
-<p>
-  dashboard works!
-</p>
+<mat-spinner *ngIf='loaderBool'></mat-spinner>
+<mat-card *ngIf='weatherData'>
+  <mat-card-title class='inlineEle'>{{weatherData.name}} {{weatherData.main.temp-273.15}} °C</mat-card-title>
+  <mat-card-subtitle class='inlineEle'>{{weatherData.main.temp_max-273.15}} max | {{weatherData.main.temp_min-273.15}} min</mat-card-subtitle>
+</mat-card>
+<mat-grid-list cols="2" rowHeight="2:1">
+  <mat-grid-tile>1</mat-grid-tile>
+  <mat-grid-tile>2</mat-grid-tile>
+  <mat-grid-tile>3</mat-grid-tile>
+  <mat-grid-tile>4</mat-grid-tile>
+</mat-grid-list>
