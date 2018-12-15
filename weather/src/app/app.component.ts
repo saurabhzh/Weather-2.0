@@ -6,13 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
-  routes = [];
-  constructor() {
-    this.routes = [
-      { label: 'DashBoard', path: 'dashboard' },
-      { label: 'Search', path: 'mapSearch' },
-      { label: 'Favorites', path: 'savedPlaces' }
-    ];
-  }
+  title = 'Weather';
 }

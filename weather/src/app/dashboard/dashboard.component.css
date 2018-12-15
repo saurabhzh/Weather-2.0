@@ -1,9 +1,0 @@
-mat-spinner{
-    position: absolute;
-    top: 42%;
-    left: 42%;
-    z-index: 2;
-}
-.inlineEle{
-    display: inline-block;
-}
